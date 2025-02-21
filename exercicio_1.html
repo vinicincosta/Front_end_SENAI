@@ -6,13 +6,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
           crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!--    Meu link de css-->
     <link rel="stylesheet" href="exercicio_1.css">
     <title>Estrutura Básica de Site</title>
-    <style>
 
-
-    </style>
 </head>
 <body>
 
@@ -26,20 +24,21 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end p-2 m3" id="navbarNav ">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#">Contact</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link disabled text-black" aria-disabled="true">Team</a>
-                </li>
-            </ul>
+            <div class="hover_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link active fs-5" aria-current="page" href="#"><p>Home</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fs-5" href="#" ><p>About</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fs-5" href="#"><p>Contact</p></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-black fs-5" href="#"><p>Team</p></a>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
@@ -47,7 +46,7 @@
 <!-- Container com metade texto e metade imagem -->
 
 
-<div class="container ms-5 mt-5 col-12 row justify-content-center">
+<div class="container ms-5 mt-5 col-12 justify-content-center">
     <div class="container  d-flex flex-row p-2" >
         <div class="text-start col-9">
             <h1>Bem vindo ao nosso site</h1>
@@ -58,13 +57,12 @@
                 uma das profissões do futuro,
                 com vagas de emprego nacionais e internacionais.<br> Se deseja saber mais sobre a profissão, continue a
                 leitura!</p>
-        </div>
+            </div>
         </div>
         <div class="image col-5 justify-content-end w-25">
             <img src="html.png" alt="Exemplo da imagem">
         </div>
     </div>
-
 </div>
 
 
@@ -98,7 +96,10 @@
 </div>
 
 <!-- Rodapé -->
-<footer class="bg-info p-3 text-center text-black">
+<footer class="bg-info p-3 text-center text-black ">
+    <a class= href="https://www.google.com/"><i class= "meu_icone bi-whatsapp fs-4 m-1" ></i></a>
+    <a class="https://classroom.google.com/u/0/c/NjcwNDc2MTMyNjI5/a/NzQ5MjEwOTk1ODU4/details"><i class=" meu_icone bi-instagram fs-4 m-1"> </i></a>
+    <i class="meu_icone bi-facebook fs-4 m-1"> </i>
     <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

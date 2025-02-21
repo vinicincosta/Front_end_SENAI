@@ -3,3 +3,13 @@ p:hover {
     text-decoration: none;
     transform: scale(1.05);
 }
+.hover p:hover {
+    color: red;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+.meu_icone:hover {
+    color: red;
+    text-decoration: none;
+    transform: scale(1.05);
+}
