@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
           crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -29,7 +29,7 @@
                         <a class="nav-link active fs-5 " aria-current="page" href="exercicio_1.html"><p>Home</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black fs-5" href="sobre.html" ><p>Sobre</p></a>
+                        <a class="nav-link text-black fs-5" href="sobre.html"><p>Sobre</p></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-black fs-5" href="servicos.html"><p>Serviços</p></a>
@@ -47,61 +47,64 @@
 </nav>
 
 
-
-
 <form class="row g-3  m-3 needs-validation" novalidate>
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label text-white">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label text-white">Senha</label>
-    <input type="password" class="form-control" id="inputPassword4">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label text-white">Endereço</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress2" class="form-label text-white">Endereço 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label text-white">Cidade</label>
-    <input type="text" class="form-control" id="inputCity">
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label text-white">Estado</label>
-    <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>...</option>
-    </select>
-  </div>
-  <div class="col-md-2">
-    <label for="inputZip" class="form-label text-white">CEP</label>
-    <input type="text" class="form-control" id="inputZip">
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input " type="checkbox" id="gridCheck">
-      <label class="form-check-label text-white" for="gridCheck">
-        Check me out
-      </label>
+    <div class="col-md-6">
+        <label id="label_email" for="inputEmail4" class="form-label" onmousedown="texto_email()">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" onmousedown="label_color()" >
     </div>
-  </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary text-white">Login</button>
-  </div>
+    <div class="col-md-6">
+        <label id="label_senha" for="inputPassword4" class="form-label" onmousedown="texto_senha()">Senha</label>
+        <input type="password" class="form-control" id="inputPassword4" onmousedown="label_color_dois()">
+    </div>
+    <div class="col-12">
+        <label id="label_address" for="inputAddress" class="form-label" onmousedown="texto_address()">Endereço</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" onmousedown="label_color_tres()">
+    </div>
+    <div class="col-12">
+        <label id="label_address_2" for="inputAddress2" class="form-label" onmousedown="texto_address_2()">Endereço 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" onmousedown="label_color_quatro()" >
+    </div>
+    <div class="col-md-6">
+        <label id="label_city" for="inputCity" class="form-label" onmousedown="texto_city()"> Cidade</label>
+        <input type="text" class="form-control" id="inputCity" onmousedown="label_color_cinco()">
+    </div>
+    <div class="col-md-4">
+        <label id="label_estado" for="inputState" class="form-label" onmousedown="texto_estado()">Estado</label>
+        <select id="inputState" class="form-select" onmousedown="label_color_sete()">
+            <option selected>Choose...</option>
+            <option>...</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+        <label id="label_cep" for="inputZip" class="form-label" onmousedown="texto_cep()">CEP</label>
+        <input type="text" class="form-control" id="inputZip" onmousedown="label_color_seis()">
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input " type="checkbox" id="gridCheck">
+            <label class="form-check-label text-white" for="gridCheck">
+                Check me out
+            </label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary text-white">Login</button>
+    </div>
+
 </form>
+<div class="col-12">
+    <button id="contato" type="submit" class="btn btn-primary text-bg-danger" onmousedown="confirma()"> Limpar</button>
+    <button type="submit" class="btn btn-primary text-bg-danger">Enviar</button>
+</div>
 
-
-<footer class= "footer bg-info p-3 text-center text-black mt-5">
-    <a class="" href="https://www.google.com/"><i class= "meu_icone bi-whatsapp fs-4 m-1" ></i></a>
-    <a class="" href="//classroom.google.com/u/0/c/NjcwNDc2MTMyNjI5/a/NzQ5MjEwOTk1ODU4/details"><i class=" meu_icone bi-instagram fs-4 m-1"> </i></a>
+<footer class="footer bg-info p-3 text-center text-black mt-5">
+    <a class="" href="https://www.google.com/"><i class="meu_icone bi-whatsapp fs-4 m-1"></i></a>
+    <a class="" href="//classroom.google.com/u/0/c/NjcwNDc2MTMyNjI5/a/NzQ5MjEwOTk1ODU4/details"><i
+            class=" meu_icone bi-instagram fs-4 m-1"> </i></a>
     <i class="" href="meu_icone bi-facebook fs-4 m-1"> </i>
     <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
 </footer>
-
+<script src="exemplos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
